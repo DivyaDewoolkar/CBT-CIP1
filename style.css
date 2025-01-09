@@ -1,0 +1,257 @@
+/* General Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f9f9f9, #e3e3e3);
+    color: #444;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+
+/* Header */
+header.header {
+    background: linear-gradient(90deg, #007acc, #005f99); 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+}
+
+header h1.connectsphere {
+    font-size: 3.8rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: #005f99;
+}
+
+/* Welcome Section */
+main {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    text-align: center;
+}
+
+main .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #e0f7fa, #b2ebf2);
+    margin: auto;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+main .welcome h2 {
+    font-size: 3rem;
+    color: #01579b;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main .welcome p {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .welcome .btn {
+    background: #0288d1;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+main .welcome .btn:hover {
+    background-color: #01579b;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin-top: auto; 
+}
+
+footer a {
+    color: #0288d1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #ff9800, #f57c00); 
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #f57c00, #e65100);
+    transform: scale(1.05);
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0288d1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #01579b;
+}
+
+/* Profile Page */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: auto;
+}
+
+.profile-container h2 {
+    font-size: 3rem;
+    color: #fbc02d;
+    margin-bottom: 15px;
+}
+
+.profile-details {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile-details li {
+    font-size: 1.5rem; 
+    margin: 10px 0;
+    color: #333;
+    background: #fff3e0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Cards */
+.post-card {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.post-card:hover {
+    transform: scale(1.02);
+}
+
+.post-card h3 {
+    font-size: 1.8rem;
+    color: #01579b;
+}
+
+.post-card p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Forms (Login, Register) */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background: #f3e5f5;
+    margin: auto; 
+    padding: 30px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; 
+    text-align: center;
+}
+
+form h1 {
+    font-size: 4.4rem; /* Increased font size */
+    color: #673ab7;
+    margin-bottom: 15px;
+}
+
+form input,
+form button {
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px; /* Increased padding */
+    font-size: 1.2rem; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #673ab7;
+    color: white;
+    font-size: 1.5rem;
+}
+
+form button:hover {
+    background: #4527a0;
+}
+
